@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div>
-        <img src="/mzfKPz6nZRIHs4shuKKwpDvOHBXqDfV_vk3y6evWiWE=-min.png" alt="image of plan" className='animate-bounce'/>
+        <img src={process.env.PUBLIC_URL+"/mzfKPz6nZRIHs4shuKKwpDvOHBXqDfV_vk3y6evWiWE=-min.png"} alt="image of plan" className='animate-bounce'/>
         <div className='grid grid-cols-2 gap-4 p-4'>
             <BoxDonutChart>
                 <DonutChart temperature={10} icon={<FaTemperatureHigh style={{ color: "#EED3B1", fontSize: "2.4rem" }}/>} unitOfMeasurement={'°C'}></DonutChart>

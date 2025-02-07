@@ -14,7 +14,7 @@ export function Menu({isMenuOpen, setIsMenuOpenHandler}) {
         }
       `}>
         <nav className="flex justify-center items-center p-6 relative ">
-          <img src="/images/гілочка 1.png" alt="bg nav" className={`
+          <img src={process.env.PUBLIC_URL+"/images/гілочка 1.png"} alt="bg nav" className={`
       absolute inset-x-[150px] inset-y-[-50%]
       transition-all duration-700 ease-out z-0
       ${isMenuOpen ?
@@ -22,7 +22,7 @@ export function Menu({isMenuOpen, setIsMenuOpenHandler}) {
         'opacity-0 -translate-y-[400px] delay-0'
       }
     `}/>
-          <img src="/images/гілочка 2.png" alt="bg nav" className={`
+          <img src={process.env.PUBLIC_URL+"/images/гілочка 2.png"} alt="bg nav" className={`
       absolute inset-x-[-30%] inset-y-[80%]
       transition-all duration-700 ease-in z-0
       ${isMenuOpen ?

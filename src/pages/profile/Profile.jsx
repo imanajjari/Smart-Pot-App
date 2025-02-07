@@ -23,7 +23,7 @@ export default function Profile() {
             {
                 profile.image?
                 <div className='bg-[#EED3B1] rounded-full p-1 border-2 border-[#f4ca99]'>
-                    <img src={profile.image} alt="profile image" className='w-full rounded-full'/>
+                    <img src={process.env.PUBLIC_URL+profile.image} alt="profile image" className='w-full rounded-full'/>
                 </div>
                 :
                 <div className='bg-[#EED3B1] rounded-full p-1 border-2 border-[#f4ca99]'>
@@ -39,7 +39,7 @@ export default function Profile() {
             <CardItem link='/' text={'تغییر پروفایل'}/>
         </div>
         <div className='overflow-hidden'>
-            <img src="/images/гілочка 2.png" alt="" className='w-[75%] absolute inset-[-15%] inset-y-[50%]'/>
+            <img src={process.env.PUBLIC_URL+"/images/гілочка 2.png"} alt="" className='w-[75%] absolute inset-[-15%] inset-y-[50%]'/>
         </div>
     </div>
   )
