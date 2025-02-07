@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Smart-Pot-App/static/css/main.2e26de83.css",
-    "main.js": "/Smart-Pot-App/static/js/main.b092e2ba.js",
+    "main.js": "/Smart-Pot-App/static/js/main.6a3ea681.js",
     "static/media/Jaro_60pt-Regular.ttf": "/Smart-Pot-App/static/media/Jaro_60pt-Regular.74f4ca0474d7acea9ac4.ttf",
     "static/media/Jaro_36pt-Regular.ttf": "/Smart-Pot-App/static/media/Jaro_36pt-Regular.49458f37ec351837e448.ttf",
     "static/media/Jaro_24pt-Regular.ttf": "/Smart-Pot-App/static/media/Jaro_24pt-Regular.fbaf44355710b0515d10.ttf",
@@ -9,10 +9,10 @@
     "static/media/Jaro-Regular.ttf": "/Smart-Pot-App/static/media/Jaro-Regular.3346c879d863ecb8ac51.ttf",
     "index.html": "/Smart-Pot-App/index.html",
     "main.2e26de83.css.map": "/Smart-Pot-App/static/css/main.2e26de83.css.map",
-    "main.b092e2ba.js.map": "/Smart-Pot-App/static/js/main.b092e2ba.js.map"
+    "main.6a3ea681.js.map": "/Smart-Pot-App/static/js/main.6a3ea681.js.map"
   },
   "entrypoints": [
     "static/css/main.2e26de83.css",
-    "static/js/main.b092e2ba.js"
+    "static/js/main.6a3ea681.js"
   ]
 }
