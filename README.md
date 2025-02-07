@@ -3,6 +3,8 @@
 ## 📌 About the Project  
 **Smart Plant Pot App** is a web and mobile application developed using **React** and **JavaScript**. It communicates with a **server via API**, which collects plant data from **microcontrollers and sensor modules**. The app features a **simple and calming UI/UX** for an optimal user experience.  
 
+link project : https://imanajjari.github.io/Smart-Pot-App/
+
 ## 🚀 Installation & Setup  
 First, clone the repository:  
 ```bash
