@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# 🌱 Smart Plant Pot App  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 About the Project  
+**Smart Plant Pot App** is a web and mobile application developed using **React** and **JavaScript**. It communicates with a **server via API**, which collects plant data from **microcontrollers and sensor modules**. The app features a **simple and calming UI/UX** for an optimal user experience.  
 
-## Available Scripts
+## 🚀 Installation & Setup  
+First, clone the repository:  
+```bash
+git clone https://github.com/your-repo.git
+cd your-repo
+```
+Then, install dependencies:  
+```bash
+npm install
+```
+To start the development server:  
+```bash
+npm start
+```
+To build the production version:  
+```bash
+npm run build
+```
 
-In the project directory, you can run:
+## 🛠️ Technologies Used  
+- **React 18** – UI development  
+- **JavaScript** – Core logic  
+- **Axios** – API requests  
+- **Chart.js** – Data visualization  
+- **Framer Motion** – Animations  
+- **React Router** – Routing management  
+- **Tailwind CSS** – Styling  
 
-### `npm start`
+## 📡 Server Communication  
+The app interacts with a **REST API** to send and receive plant data collected from **microcontrollers and sensor modules**.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Project Structure  
+```
+📂 public
+  ├── 📂 photo-app
+  │   ├── Screenshot 2025-02-07 235445.png
+  │   ├── Screenshot 2025-02-07 235626.png
+  │   ├── Screenshot 2025-02-08 000023.png
+  │   ├── Screenshot 2025-02-08 000132.png
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📷 Screenshots  
+<p align="center">
+  <img src="public/photo-app/Screenshot%202025-02-07%20235445.png" width="45%">
+  <img src="public/photo-app/Screenshot%202025-02-07%20235626.png" width="45%">
+</p>
+## 🎥 Demo Video  
+<p align="center">
+  <video width="90%" controls>
+    <source src="public/photo-app/Screen_Recording_20250207_182536_Chrome.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License  
+This project is licensed under the **MIT License**.

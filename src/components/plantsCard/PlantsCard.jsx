@@ -26,7 +26,11 @@ export function PlantsCard({ id, name, image, isSelected, submitHandler, deleteH
 
         <div className="relative z-10">
           <img src={image} alt="image of plant" className='animate-bounce p-2' />
+          {isSelected?
+          <h2 className='font-jar text-[#116B53] text-xl font-jaro'>{name}</h2>
+          :
           <h2 className='font-jar text-[#EED3B1] text-xl font-jaro'>{name}</h2>
+          }
         </div>
         
       </div>
