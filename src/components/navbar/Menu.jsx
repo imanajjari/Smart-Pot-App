@@ -36,7 +36,7 @@ export function Menu({isMenuOpen, setIsMenuOpenHandler}) {
             <li className="block py-2" ><Link to="/" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}>صفحه اصلی</Link></li>
             <li className="block py-2" ><Link to="/plants-list" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}>انتخاب گیاه</Link></li>
             <li className="block py-2" ><Link to="/profile" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}>پروفایل</Link></li>
-            <li className="block py-2" ><Link to="/" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}>تماس</Link></li>
+            <li className="block py-2" ><Link to="tell:09393033001" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}>تماس</Link></li>
             <li className="flex py-2 justify-center text-4xl" onClick={() => setIsMenuOpenHandler(!isMenuOpen)}><IoClose style={{ color: "#0a4a3a", fontSize: "3rem" }}/></li>
           </ul>
         </nav>

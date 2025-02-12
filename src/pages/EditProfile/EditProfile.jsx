@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import axios from 'axios';
+import { profile, logout } from '../../store';
+import { useDispatch } from 'react-redux';
 
 export default function EditProfile() {
+  const dispatch = useDispatch()
   const [profileData, setProfileData] = useState({
     firstName: '',
     lastName: '',
@@ -34,7 +37,7 @@ export default function EditProfile() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    dispatch(profile({...profileData}))
     if (!profileData.firstName || !profileData.lastName || !profileData.phone) {
       Swal.fire({
         title: "لطفاً تمام اطلاعات را وارد کنید",

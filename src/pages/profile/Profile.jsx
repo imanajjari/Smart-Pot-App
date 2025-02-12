@@ -2,15 +2,22 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { CgProfile } from "react-icons/cg";
 import { CardItem } from '../../components';
+import { useSelector } from 'react-redux';
 
 export default function Profile() {
+    const selector = useSelector((state)=> state.user)
     const [profile, setProfile]=useState({});
     const [plant, setPlant]=useState({});
+    
   useEffect(()=>{
-    axios.get(`http://localhost:4000/profile`)
-    .then(function (res) {   
-        setProfile(res.data)
-    })
+    if(selector.firstName & selector.firstNam & selector.firstNam){
+        setProfile(...selector)
+    }else{
+        axios.get(`http://localhost:4000/profile`)
+        .then(function (res) {   
+            setProfile(res.data)
+        })
+    }
     axios.get(`http://localhost:4000/flower`)
     .then(function (res) {   
         setPlant(res.data)
