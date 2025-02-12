@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PlantsCard } from '../../components';
 import axios from 'axios';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 export default function PlantsList() {
   const [flowerList, setFlowerList] = useState([]);
@@ -11,7 +11,7 @@ export default function PlantsList() {
 
   useEffect(() => {
     axios
-      .get("https://goldan-server.liara.run/flowerList")
+      .get("http://localhost:4000/flowerList")
       .then((res) => {
         setFlowerList(res.data);
       })
@@ -19,7 +19,7 @@ export default function PlantsList() {
         console.error("Error fetching flower list:", err.response?.data || err.message);
       });
       axios
-      .get("https://goldan-server.liara.run/flower")
+      .get("http://localhost:4000/flower")
       .then((res) => {
         setSelectedFlower(res.data.id);
       })
@@ -37,7 +37,7 @@ export default function PlantsList() {
     }
     try {
       setSelectedFlower(id);
-      await axios.put("https://goldan-server.liara.run/flower", selectedFlower);
+      await axios.put("http://localhost:4000/flower", selectedFlower);
     } catch (err) {
       console.error("Error updating flower:", err.response?.data || err.message);
     }
@@ -45,7 +45,7 @@ export default function PlantsList() {
 
   const deleteHandler = async (id) => {
     try {
-      await axios.delete(`https://goldan-server.liara.run/flowerList/${id}`);
+      await axios.delete(`http://localhost:4000/flowerList/${id}`);
       setFlowerList((prevList) => prevList.filter((flower) => flower.id !== id));
       
     } catch (err) {
@@ -61,7 +61,7 @@ export default function PlantsList() {
 
   return (
     <div>
-      <div>
+      <div className='flex justify-center'>
         <input
           type="text"
           className="bg-[#116B53] shadow-2xl w-[75%] text-xl text-[#EED3B1] rounded-xl p-2 my-2 text-right focus:outline-none focus:ring-0 focus:animate-pulseGlow"

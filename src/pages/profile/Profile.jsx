@@ -5,15 +5,20 @@ import { CardItem } from '../../components';
 
 export default function Profile() {
     const [profile, setProfile]=useState({});
+    const [plant, setPlant]=useState({});
   useEffect(()=>{
-    axios.get(`https://goldan-server.liara.run/profile`)
+    axios.get(`http://localhost:4000/profile`)
     .then(function (res) {   
         setProfile(res.data)
     })
+    axios.get(`http://localhost:4000/flower`)
+    .then(function (res) {   
+        setPlant(res.data)
+    })
   },[])
   return (
-    <div className=' relative scrollbar-hide overflow-hidden h-[80vh]'>
-        <div className='flex justify-center py-2'>
+    <div className=' relative scrollbar-hide overflow-hidden h-[80vh] lg:h-[90vh] text-right'>
+        <div className='flex justify-end py-2 px-4'>
             <div className='text-right px-2 text-[#116B53] text-lg font-medium'><h1 className='text-3xl font-bold'>{profile.firstName} {profile.lastName}</h1>
             {
                 profile.phone?<p>{profile.phone}</p>:
@@ -23,7 +28,7 @@ export default function Profile() {
             {
                 profile.image?
                 <div className='bg-[#EED3B1] rounded-full p-1 border-2 border-[#f4ca99]'>
-                    <img src={process.env.PUBLIC_URL+profile.image} alt="profile image" className='w-full rounded-full'/>
+                    <img src={process.env.PUBLIC_URL+profile.image} alt="profile" className='w-full rounded-full '/>
                 </div>
                 :
                 <div className='bg-[#EED3B1] rounded-full p-1 border-2 border-[#f4ca99]'>
@@ -33,13 +38,14 @@ export default function Profile() {
             </div>
         </div>
         <div>
-            <CardItem link='/' text={'تغییر پروفایل'}/>
-            <CardItem link='/' text={'تغییر پروفایل'}/>
-            <CardItem link='/' text={'تغییر پروفایل'}/>
-            <CardItem link='/' text={'تغییر پروفایل'}/>
+            <CardItem link='/edit-profile' text={'تغییر پروفایل'}/>
+            <CardItem link='/createP-plant' text={'ساخت گیاه'}/>
+            {plant.id > 6 && (<CardItem link='/edit-plant' text={'تغییر تنظیمات گیاه'}/>)}
+            
+            {/* <CardItem link='/' text={'تغییر پروفایل'}/> */}
         </div>
         <div className='overflow-hidden'>
-            <img src={process.env.PUBLIC_URL+"/images/гілочка 2.png"} alt="" className='w-[75%] absolute inset-[-15%] inset-y-[50%]'/>
+            <img src={process.env.PUBLIC_URL+"/images/гілочка 2.png"} alt="" className='w-[75%] absolute inset-[-15%] inset-y-[50%] '/>
         </div>
     </div>
   )

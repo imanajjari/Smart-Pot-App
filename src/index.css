@@ -4,35 +4,35 @@
 
 @font-face {
   font-family: 'Jaro';
-  src: url('./font/Jaro-Regular.ttf') format('truetype');
+  src: url('./static/media/Jaro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jaro';
-  src: url('./font/Jaro_9pt-Regular.ttf') format('truetype');
+  src: url('./static/media/Jaro_9pt-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jaro';
-  src: url('./font/Jaro_24pt-Regular.ttf') format('truetype');
+  src: url('./static/media/Jaro_24pt-Regular.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jaro';
-  src: url('./font/Jaro_36pt-Regular.ttf') format('truetype');
+  src: url('./static/media/Jaro_36pt-Regular.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jaro';
-  src: url('./font/Jaro_60pt-Regular.ttf') format('truetype');
+  src: url('./static/media/Jaro_60pt-Regular.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }

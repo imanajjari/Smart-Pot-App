@@ -6,9 +6,9 @@ import { Navbar } from './components';
 function App() {
   let router = useRoutes(routes)
   return (
-    <div className="App">
-      <Navbar />
-      {router}
+    <div className="lg:w-[700px] lg:justify-self-center">
+        <Navbar />
+        {router}
     </div>
   );
 }
